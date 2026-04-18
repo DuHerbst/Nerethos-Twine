@@ -445,6 +445,10 @@ html, body {
 &lt;&lt;set $SeenShrine to false&gt;&gt;
 &lt;&lt;set $CastleHub to false&gt;&gt;
 &lt;&lt;set $Observations to 0&gt;&gt;
+&lt;&lt;set $SerenaDiary to false&gt;&gt;
+
+&lt;&lt;set $PrototypeEnding to &quot;&quot;&gt;&gt;
+
 
 /*AUDIO*/
 
@@ -488,7 +492,7 @@ You turn around and see a cobblestone path inviting you towards the port
 [[Move. Get it over with|TownDream]]
 
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Chapter4_Start" tags="" position="3200,700" size="100,100">&lt;&lt;set $Madness = 0&gt;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Chapter4_Start" tags="" position="3300,600" size="100,100">&lt;&lt;set $Madness = 0&gt;&gt;
 &lt;&lt;set $AlchemyCurrent = 3&gt;&gt;
 &lt;div class=&quot;chapter-card&quot;&gt;
   &lt;h1 class=&quot;chapter-title&quot;&gt;Chapter 5&lt;/h1&gt;
@@ -603,7 +607,7 @@ Strawberry and &lt;i&gt;that creature.&lt;/i&gt;
 [[I did|Separated][$Violence += 1; $Madness += 1, $BerriesSeparated = true]]
 [[No, I didn&#39;t|NotSeparated]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="LektryonStart" tags="" position="2675,1775" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="LektryonStart" tags="" position="2675,1750" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You make your way to the Order&#39;s training grounds. You hear the rhytm of the clash of steel against steel, echoing through the hallway before you reach the area.
@@ -758,7 +762,7 @@ When she lifts her head again, there&#39;s nothing. Your fingers curl into a fis
 
 [[Leave the prison wing|Main Hall][$VisitedHall to true, $VisitedBerry to true]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Lektryon_Pass2" tags="" position="2500,1750" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Lektryon_Pass2" tags="" position="2500,1725" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Lektryon tosses a training sword at your feet. You glance at it and then back at him, already settling into stance, steel sword in hand. Then he stops for a second to take an item off his belt.
@@ -772,7 +776,7 @@ Has he always been this casual with it? You&#39;ve beaten him without it before 
 [[Grab the vial|Lektryon_Alchemy][$Madness += 1]]
 [[&#39;&#39;If you need it, that&#39;s your problem&#39;&#39;|Lektryon_NoAlchemy]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Lektryon_NoAlchemy" tags="" position="2225,1900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Lektryon_NoAlchemy" tags="" position="2225,1875" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You kick the sword he tossed at you away.
@@ -788,7 +792,7 @@ In a beat, he turns back at you, with more weight behind his attacks now. &lt;i&
 [[Exploit the opening with a precise strike|Lektryon_Strike]]
 [[Keep observing his pattern|Lektryon_Observe]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Lektryon_Alchemy" tags="" position="2400,1875" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Lektryon_Alchemy" tags="" position="2400,1850" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You grab the vial quickly off his hand and drink it. The taste is sharp, metallic. 
@@ -809,7 +813,7 @@ You can feel it now. The speed. The strength. Your next blade hits harder, makin
 [[Attack. Just attack|Lektryon_Alchemy_Aggressive][$Violence += 1]]
 [[Strike again before he resets|Lektryon_Alchemy_Strike]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Lektryon_Observe" tags="" position="2175,2200" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Lektryon_Observe" tags="" position="2200,2175" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Not yet. Just a little more. Lektryon swings again, committing his weight into the strike. You step aside just enough for it to miss you but close enough for you to feel the shift in the air from the swing.
@@ -830,7 +834,7 @@ Lektryon freezes and breathes sharply for a second. His chest is rising fast and
 [[&#39;&#39;What are you compensating for, brother?&#39;&#39;|Lektryon_FightEnd]]
 [[&#39;&#39;You’re getting stronger. Just not better.&#39;&#39;|Lektryon_FightEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Lektryon_FightEnd" tags="" position="2650,2175" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Lektryon_FightEnd" tags="" position="2650,2150" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Your blade leaves his body and you push off him. He lays on the ground, just beneath you. You tilt your head slightly, looking at him.
@@ -845,7 +849,7 @@ You have already turned away from him, leaving the training grounds. You don&#39
 
 [[Return to the Main Hall|Main Hall][$VisitedHall to true, $VisitedLek to true]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Lektryon_Strike" tags="" position="2300,2075" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Lektryon_Strike" tags="" position="2300,2050" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Enough. You don’t wait for the next opening; you instead meet him head-on. Your first blade catches his mid-swing, and before he can recover, you’re already moving closer.
@@ -859,7 +863,7 @@ Lektryon freezes for a moment and exhales a loud gasp. His grip tightens around 
 [[&#39;&#39;Still chasing after me, brother?&#39;&#39;|Lektryon_FightEnd]]
 [[&#39;&#39;You’re relying on it now. I can see it&#39;&#39;|Lektryon_FightEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Lektryon_Alchemy_Strike" tags="" position="2600,1925" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Lektryon_Alchemy_Strike" tags="" position="2600,1900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 He tries to stand up immediately but he&#39;s too slow. You’re already on him.
@@ -876,7 +880,7 @@ He hisses and groans through his teeth. Your keep your blade buried deep into hi
 [[&quot;Say it. Say you are done, Centurion&quot;|Lektryon_FightEnd]]
 [[&quot;Do you want to stop, brother?&quot;|Lektryon_FightEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Lektryon_Alchemy_Aggressive" tags="" position="2475,2025" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Lektryon_Alchemy_Aggressive" tags="" position="2475,2000" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 He tries to stand up, but you don’t let him. Without a thought or even a beat, your blade crashes into his guard, breaking through by shear force. Then again. Then again.
@@ -1082,9 +1086,13 @@ Your eyes track them, timing your movements and learning their patterns. Easy. &
 
 &lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="40" name="Castle_Hub" tags="" position="3150,2550" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt; &lt;&lt;if $CastleHub is false&gt;&gt;
 
-You grip the ledge of the window and pull yourself up, entering through the open window, silently. You look around the area an immediately feel discomfort. The hallway continues ahead, lined with tall vases and paintings that seem older than the rest of the castle, watching you as you move.
+You grip the ledge of the window and pull yourself up, entering through the open window, silently. The hallway stretches ahead. You move through it as quietly as you can.
 
-As you start moving forward, you are able to hear a few voices coming your way. You freeze and slip into the shadows between two pillars just as the guards pass your position.
+As you enter the castle, you see very old, tall marble vases lining the walls. Some are dark stone, not sure. Over them, golden-framed portraits. People dressing formally, too composed and &lt;i&gt;pristine.&lt;/i&gt; You keep walking down the hallway, looking at all of them quickly until you reach one of a woman with sharp features and dark eyes. You stop and tilt your head slightly.
+
+&lt;i&gt;&quot;Queen Serena...&quot;&lt;/i&gt;
+
+Stop. You hear something. Voices coming your way. You freeze and slip into the shadows between two pillars just as the guards pass your position.
 
 “…but he said the raid was necessary.” 
 
@@ -1101,7 +1109,7 @@ You don’t have time to explore everything. You’ll have to choose carefully..
 &lt;&lt;if $CastleHub is false&gt;&gt;
 You grip the ledge of the window and pull yourself up, entering through the open window without stopping. Your boots hit the ground and you move immediately.
 
-The hallway stretches ahead, the castle looks old but you barely register anything around you. Focus.
+The hallway stretches ahead, the castle looks old, the walls are made of stones and theres a bunch of portraits. You barely register anything around you. Focus on the mission.
 
 You hear movement and voices ahead but you don&#39;t stop, you just slip between two pillars in the way, just as the guards pass your position.
 
@@ -1232,7 +1240,7 @@ A high-pitched voice answers. “…will it hurt again?” A pause.
 [[Keep Observing|Catacombs_Ichor][$Knowledge +=1]]
 [[Nothing left to see here|CastleHall]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="CastleHall" tags="" position="2900,3200" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="CastleHall" tags="" position="2900,3225" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 You press your jaw slightly. &lt;i&gt;&#39;&#39;What is all of this…?&#39;&#39;&lt;/i&gt;
 &lt;&lt;if $Madness is 2&gt;&gt; &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Oh come on…&quot;&lt;/p&gt; The voice slips in, amused. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;You saw it.&quot;&lt;/p&gt; A soft laugh follows. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;You just don’t want to say it.&quot;&lt;/p&gt; &lt;&lt;/if&gt;&gt;
@@ -1254,8 +1262,8 @@ You stay still, waiting for her to leave until
 
 “You shouldn’t be here.” You freeze. She doesn’t turn, but starts walking forward. &quot;Come...&quot;
 
-[[Follow her calmly|Serena1]]
-&lt;&lt;if $Madness is 3&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;She&#39;ll be alone...&#39;&#39;|Serena1]]&lt;/span&gt;&lt;&lt;/if&gt;&gt; &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Catacombs_Ichor" tags="" position="3425,3050" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+[[Follow her calmly|Serena_Room]]
+&lt;&lt;if $Madness is 3&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;She&#39;ll be alone...&#39;&#39;|Serena_Room]]&lt;/span&gt;&lt;&lt;/if&gt;&gt; &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="49" name="Catacombs_Ichor" tags="" position="3425,3050" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You had not realized that you had leaned forward to see better until you stop yourself from coming more forward into the candle lights.
@@ -1274,7 +1282,21 @@ You can&#39;t stay here anymore.
 
 [[Leave the Castle|CastleHall]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="Serena1" tags="" position="3600,3300" size="100,100">&lt;div class=&quot;chapter-card&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="50" name="PrototypeEnd" tags="" position="3625,3600" size="100,100">&lt;div class=&quot;chapter-card&quot;&gt;
+&lt;&lt;if $PrototypeEnding is &quot;KillEnd&quot;&gt;&gt;
+&lt;div class=&quot;chapter-subtitle&quot;&gt;Uh, man maybe you shouldn&#39;t have?(╥﹏╥)&lt;/div&gt;
+&lt;&lt;elseif $PrototypeEnding is &quot;WohooEnd&quot;&gt;&gt;
+&lt;div class=&quot;chapter-subtitle&quot;&gt;Hey, slut.(⸝⸝&gt; ᴗ•⸝⸝)&lt;/div&gt;
+&lt;&lt;elseif $PrototypeEnding is &quot;VioEnd&quot;&gt;&gt;
+&lt;div class=&quot;chapter-subtitle&quot;&gt;Uhm...( ⚆ _ ⚆ )&lt;/div&gt;
+&lt;&lt;elseif $PrototypeEnding is &quot;CaughEnd&quot;&gt;&gt;
+&lt;div class=&quot;chapter-subtitle&quot;&gt;Hey! Not everything should be revealed so quickly!(⊙_⊙;)&lt;/div&gt;
+&lt;&lt;elseif $PrototypeEnding is &quot;GroundsEnd&quot;&gt;&gt;
+&lt;div class=&quot;chapter-subtitle&quot;&gt;Go, go, go!( •̀ᴗ•́ )و ̑̑&lt;/div&gt;
+
+&lt;&lt;else&gt;&gt;
+&lt;div class=&quot;chapter-subtitle&quot;&gt;(⸝⸝&gt; ᴗ•⸝⸝)&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
 &lt;h1 class=&quot;chapter-title&quot;&gt;THIS PROTOTYPE ENDS HERE!&lt;/h1&gt;
 &lt;div class=&quot;chapter-subtitle&quot;&gt;Thanks for playing!&lt;/div&gt;
 &lt;p&gt;Written by: Miss Nibiru || VO: Noah Konstantin&lt;/p&gt;
@@ -1311,7 +1333,7 @@ You hear voices outside of the room, patrolling around. Shit, there&#39;s no tim
 [[Check the map|WarRoomA_Map]]
 [[Check the Ledger|WarRoomA_Ledger]]
 [[Hide and listen|WarRoomA_Guards]]
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="ShrineA" tags="" position="2200,2825" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="ShrineA" tags="" position="2200,2850" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 You take the right corridor and end up by a door that looks older than the rest around your path. You push it slightly. It opens with creak and you slip inside. The overwhelming smell of sage and moonflowers reaches you.
 
@@ -1339,7 +1361,7 @@ Their patrol is tighter than the others you’ve seen tonight. They don’t cros
 [[Keep watching|Catacombs_A2][$Knowledge +=1]]
 [[&#39;&#39;This isn’t worth the risk&#39;&#39;|CastleHall]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="WarRoomA_Map" tags="" position="2125,2350" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="WarRoomA_Map" tags="" position="2125,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 You make your way towards the largest map on the wall and lean forward. You can barely makeout anything marked. Are these routes?
 
@@ -1348,7 +1370,7 @@ You try to make sense of these to no avail. They kind of look like black market 
 No wording to compare or make any sense of what you are looking at. &lt;&lt;if $Madness gte 2&gt;&gt; &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Uh, they might know&quot;&lt;/p&gt; &quot;Shut up already!&quot;. She laughs once more and then fades. Damn her, always.&lt;&lt;/if&gt;&gt; You hear movement outside the room. You gotta go deal with that immediately.
 
 &lt;&lt;set $SeenWarRoom to true&gt;&gt;&lt;&lt;set $Observations += 1&gt;&gt; [[Deal with the guards|WarRoomA_Guards][$CastleHub to true]]
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="WarRoomA_Ledger" tags="" position="2300,2425" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="WarRoomA_Ledger" tags="" position="2300,2400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 Your eyes move around the room quickly, trying to pick somenthing to check. This damn place is infinite. You see a stack of books in a cluster across the table. Some are open, with pages sticking out. You reach for one of these.
 
@@ -1370,7 +1392,7 @@ You don’t have time to think. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot
 [[Sneak back to main corridor|Castle_HubA][$CastleHub to true]]
 &lt;&lt;if $Madness &gt;= 2&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;I should knock them out&#39;&#39;|WarRoomA_Sleep][$Madness += 1]]&lt;/span&gt; &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $Madness &gt;= 3&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;They won’t talk if they’re dead.&#39;&#39;|WarRoomA_Kill][$Violence += 1, $Madness += 1]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="WarRoomA_Sleep" tags="" position="2125,2525" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="WarRoomA_Sleep" tags="" position="2125,2475" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 You move as they shift to turn, closing the distance instantly. Your arm extends towards the closest one, grabbing and pulling him down before he can even react.
 
@@ -1380,7 +1402,7 @@ Silence.
 
 You drag both bodies quickly, back into the room you just left. You close the door behind you silently and look around. No witnesses. Let&#39;s press on. &lt;&lt;if $Madness gte 3&gt;&gt; &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Clean.&quot;&lt;/p&gt; &lt;&lt;/if&gt;&gt;
 
-[[Back to main corridor|Castle_HubA]] &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="WarRoomA_Kill" tags="" position="2125,2650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+[[Back to main corridor|Castle_HubA]] &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="WarRoomA_Kill" tags="" position="2125,2600" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 You move as they shift to turn, closing the distance instantly. Your arm extends toward the closest one, grabbing him by the collar and yanking him down with force, his body hitting the marble, hard. He gasps, looking for air, before your boot lands on his neck, crushing it.
 
@@ -1390,7 +1412,7 @@ Silence. &lt;&lt;if $Madness gte 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot
 
 [[Back to main corridor|Castle_HubA]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ShrineA2" tags="" position="2200,2950" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="ShrineA2" tags="" position="2200,2975" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 You move away from the door quickly, pushing yourself through the room just as the door begins to open and footsteps enter the room.
 
@@ -1465,6 +1487,308 @@ He looks back at you with a stern expression. With expectation.
 [[&#39;&#39;Understood, Archon&#39;&#39;|Go]]
 [[&#39;&#39;I won’t fail, Archon&#39;&#39;|Go]]
 &lt;&lt;if $Madness &gt;= 2&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;I don&#39;t need you to tell me&#39;&#39;|Go]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Serena_Room" tags="" position="2900,3400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+The door to Queen Serena’s chambers opens and immediately feel the difference. The rest of the castle is stone and ancient... but this space breathes.
+
+Thin brass pipes snake along the circular-shaped room. Candles flicker in mechanical holders attached to the pipes and the air faintly smells of oil and smoke. &lt;div class=&quot;hover&quot;&gt;&lt;&lt;nobr&gt;&gt;Multiple artifacts&lt;span class=&quot;hoverblock&quot;&gt;Nerethos blends classical Greco-Roman architecture with steampunk innovation. Everything here is handcrafted, industrial, built over ancient foundations.&lt;/span&gt;&lt;&lt;/nobr&gt;&gt;&lt;/div&gt; line the far wall. Tools arranged with obsessive care. A working station.
+
+Right in front of you, a gigantic bed and beyond that, even bigger windows framed with steel. The curtains of all windows dance with the wind from the one that remains open to your left, where papers are scattered on a desk. Itself is a whirlpool of blueprints, schematics, leather-bound notebooks.
+
+&lt;&lt;if $Madness is 4&gt;&gt;You feel an immediate, sharp pain going from your head down your spine. For a second your vision blurs. Serena’s mouth moves. The room hums. On from the corner of your eye you see Eris once more. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Feeling okay there, &quot;Legate&quot;?”&lt;/p&gt; She says, as she salutes you and laughs maniacally.&lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Should’ve slowed down.&quot;&lt;/p&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&quot;I need to stăy foćĈĉused&quot;|Serena_Alch]]&lt;/span&gt;
+&lt;span class=&quot;alchemy-link&quot;&gt;[[úûüýþÿĀāĂăĄąĆćĈĉĊċ|PrototypeEnd][$PrototypeEnding = &quot;KillEnd&quot;]]&lt;/span&gt;
+&lt;&lt;else&gt;&gt;Where the rest of the castle clings to stone, this room breathes progress, much as all Nerethos should... except for the Erythros castle. &lt;i&gt;&quot;What is this place?&lt;/i&gt;
+
+[[Approach the desk and inspect the notebook|Serena_Desk][$SerenaDiary = false; $Knowledge += 1]]
+&lt;&lt;if $Knowledge &gt;= 4&gt;&gt;[[Try to steal the notebook|Serena_Desk][$SerenaDiary = true; $Knowledge += 1]]&lt;&lt;/if&gt;&gt;
+[[Observe the room more carefully before moving|Serena_Entry][$Knowledge += 1]]
+[[Stay where you are and wait for Serena|Serena_Entry]]
+&lt;&lt;if $Violence &gt;= 3&gt;&gt;[[Grip your weapon and step forward|Serena_Entry]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Serena_Entry" tags="" position="2900,3550" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+
+&lt;&lt;if $Madness is 4&gt;&gt;&quot;Shut the ĩĪīĶĸoor. ...meant to ĂăĄąĆćĈĉĊ.”
+
+You look at Serena... you think. You stumble as you close the door behind you. &lt;i&gt;Dizzy...&lt;/i&gt;
+
+You hear Serena&#39;s voice again. “The halls of this paŠšŢţŤťŦŧŨ ĹĺĻļĽľĿŀŁłŃ strays,” she continues, “And yet ĒēĔĕĖėĘęĚěĜĝĞğĠġ. Why ĒēĔĕĖėĘęĚěĜĝĞğĠġ you so?”
+
+&lt;span class=&quot;alchemy-link&quot;&gt;[[“HædachŒ... just- wait.”|Serena_Study]]&lt;/span&gt;
+&lt;span class=&quot;alchemy-link&quot;&gt;[[æÆœŒßðø|PrototypeEnd][$PrototypeEnding = &quot;KillEnd&quot;]]&lt;/span&gt;
+&lt;&lt;else&gt;&gt;
+&quot;Shut the door. You are not meant to be here.”
+
+You look at Serena as you close the door behind you. Serena stands near the centre of the room, posture straight, chin lifted. She is just standing there, waiting for your answer. Doesn&#39;t seem she&#39;d call the guards. She does not reach for a weapon.
+
+She studies you. “The halls of this palace do not welcome strays,” she continues, “And yet you walk &lt;i&gt;among&lt;/i&gt; them. Why would they welcome you so?”
+
+&lt;&lt;if $Madness is 3&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[”Where...”|Serena_Alch]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+[[“I go where I need to.”|Serena_Study]]
+[[“Who are you calling a stray?”|Serena_Study]]
+[[Stay silent and watch her|Serena_Study]]
+&lt;&lt;if $Knowledge &gt;= 4&gt;&gt;[[“‘Among’? Hm. I thought you’d say ‘amongst&#39; Gods are supposed to be perfect.”|Serena_Study][$Knowledge += 1, $SerenaDiscovered = true]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $Violence &gt;= 3&gt;&gt;[[Step closer, threatening. “Careful who you call a stray.”|Serena_Study][$Violence += 1]]&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="Serena_Desk" tags="" position="2700,3450" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;&lt;set $SerenaDiary to true&gt;&gt;
+The notebook is small, leather-bound, worn at the corners. Seems it is used a lot...&lt;&lt;if $SerenaDiary&gt;&gt;
+
+You don&#39;t even take a second. If &lt;i&gt;The Queen&lt;/i&gt; keeps notes, they must be of relevance. There may be something useful inside.
+
+You slip the notebook into your clothes, quickly but carefully, to not disturb anything else on the desk.
+
+&lt;&lt;else&gt;&gt;
+
+You open the notebook just enough to give it a quick glance. It feels almost disappointingly normal... Just some quick sketches on several pages or some big lettering here and there.
+
+&lt;i&gt;Is she a damn teenager?&lt;/i&gt; Flowers. Bits of machinery. Strange little designs of something mechanical. Some lines are harsh, more frantic. Some are scratched over. Others are unfinished.
+
+&quot;Stranger, what are you searching for?&quot;
+
+[[Take the notebook|Serena_Entry][$SerenaDiary = true]]&lt;&lt;/if&gt;&gt;
+[[Step away from the desk|Serena_Entry]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Serena_Main" tags="" position="2875,3900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+For a heartbeat, neither of you moves or speaks. The closeness between you feels like standing too close to a fire. You should let her go and step back, yet...
+
+&quot;You wear that well,&quot; she says, quieter now, inhaling slowly as she composes herself, her eyes never leaving you.
+
+“I am the Queen of Nerethos,” she says. “I have been for five years now. I speak for this island, for its people... and I serve what must be served and endure what must be endured.” Her shoulders lower, just slightly. Her hand tenses into a fist, then loosens.
+
+&lt;&lt;if $Madness &gt;= 2 and $Madness &lt; 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Huh...&quot;&lt;/i&gt; &lt;/p&gt;Eris whispers, almost pleased. &lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Did you see that?&quot;&lt;/i&gt;&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness &gt;= 3&gt;&gt;From the edge of your vision, Eris leans against the wall, watching the two of you with open amusement. &lt;p style=&quot;color: #a674e8;&quot;&gt;“Careful, babe...”&lt;/p&gt; She hums, tilting her head. &lt;p style=&quot;color: #a674e8;&quot;&gt;“You don&#39;t wanna get too close...”&lt;/p&gt;&lt;&lt;/if&gt;&gt;Serena shakes her head, as if waking from her own thoughts.
+
+Her eyes return to yours. The corner of her lips raises into something like a smile. “The Gods do not bargain... and the rest of us learn to survive what follows... There is no other way and there are worse outcomes than this.”
+
+&lt;&lt;if $Violence &gt;= 4&gt;&gt;[[“Don’t give me that shit. Talk”|Serena_Vio][$Violence += 1]]&lt;&lt;/if&gt;&gt;
+[[Loosen your grip but don’t step back|Serena_Break]]
+[[“...What the fuck are you looking at?”|Serena_Curious]]
+[[“You talk like this was already decided”|Serena_Know][$Knowledge += 1]]
+[[“The Gods... of fuckin&#39; course”|Serena_Break]]
+&lt;&lt;if $Violence &gt;= 4&gt;&gt;[[What are you enduring?|Serena_Know][$Knowledge += 1]]&lt;&lt;/if&gt;&gt;
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="Serena_Alch" tags="" position="3225,3300" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+You push Serena away. Hard; fast. &lt;i&gt;Very&lt;/i&gt; hard. The sound of impact echoes and a very high-pitched cry floods your hearing. Your head snaps to the side. Pain crawling down your spine.
+
+&lt;i&gt;&quot;What did she just say...?&quot;&lt;/i&gt;
+
+You try to focus on her again. You can’t. The room folds in on itself. The pipes twist. The light flickers The desk— the bed— the walls— &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;ÃÄűŲųŴŵ&quot; &lt;/p&gt;Eris hums, standing right next to you. Directly in your ear. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Yo̸ō̷Ŏ̴ŏ̷… Ő̸ pu̶s̷ĵ̴Ķ̷ķ̴… k̵ĸ̶Ĺ̷ĺ̴Ļ̶ļ̴d… a li̶t̷t̴l̷e̶ too fa̸r̷… di̴d̶n’̷t̶ yo̷u̴?&quot;&lt;/p&gt;Is Serena is still here? Is she looking at you? &lt;i&gt;&quot;Wait... what did she say?&quot;&lt;/i&gt;
+&lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;ŅņÃÄŎŏŧŤť¾¿ĩĨīńŃ×… ķĩłᵒᵒķ̷̛̓́̾̾̑͌́̒̓̕͝ĬĭĮĚíîïðñŃ…&quot;&lt;/p&gt;Eris hums, standing right next to you. Directly in your ear. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;śᵗᵒᵒ… ᶠᵃʳ…ęĒē… śŚÃ̴͝Ä̶̀ű̷̈́…Ų̴͌ų̶…ŵ̷đ… ņŃńøŎdi̴d̶n’̷t̶ yo̷u̴?ŃğĜĝ…&quot;&lt;/p&gt; She says, licking and nibbling your earlobe
+
+&lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;ĹŠšŢţŠšŤťŦť’şŚ… Ğğøᵘƈᵏ̷̛̓́̾̾̑͌́̒̓̕͝… ɓśᵉᵉ̷̛̓́̾̾̑͌́̒̓̕͝ɓɓ…&quot;&lt;/p&gt;
+
+[[ĹĻĽᵉÄᵛĒ̷̛̓́̾̾̑͌́̒̓̕͝… ŃńᵒŴ̷̛̓́̾̾̑͌́̒̓̕͝…|Alch_Go]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="Serena_Study" tags="" position="2875,3725" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+Serena says nothing, but her eyes remain on you, studying you.
+&lt;&lt;if $Madness is 4&gt;&gt;You can kind of make out a shadow approaching you rapidly. The headache is impossible to handle anymore...
+
+“You ĄąĆćĈĉĊ yoĳĴĵ much ƈєʳᵗᵃᶦᶰᵗʸ for an ᶦᶰᵗʳᵘᵈєʳ”
+
+You blink once, and the shadow is now next to you. Too close.
+
+&lt;span class=&quot;alchemy-link&quot;&gt;[[“GET THE ꓝᵘƈᵏ̷̛̓́̾̾̑͌́̒̓̕͝ Œßð MY 𐊇ᵃƈꓰ”|Serena_Alch]]&lt;/span&gt;
+&lt;span class=&quot;alchemy-link&quot;&gt;[[ƙ̶…ɭ̷… н̴…г̶г̷̛̓́̾̾̑͌́̒̓̕͝||PrototypeEnd][$PrototypeEnding = &quot;KillEnd&quot;]]&lt;/span&gt;
+&lt;&lt;else&gt;&gt;Serena begins to close the distance between you. “You carry yourself with too much structure for an intruder,” she says. “Unusual.” She walks toward you slowly, until the space between you tightens. Why does her presence feel so... &lt;i&gt;soothing?&lt;/i&gt;
+
+“So, answer me straight.&quot; She says as she starts turning to face you. &quot;Who are you, and what are you searching for?”
+
+You scoff, and before she can react, step into the room and grab her wrist. “No,” you say, holding her tighter, “I’m not here to play your games.”
+
+&lt;&lt;if $Violence &gt;= 3&gt;&gt;[[“What the hell is your role in all this?”|Serena_Vio]]&lt;&lt;/if&gt;&gt;
+[[“Why are you hellbent on destroying Nerethos?”|Serena_Main]]
+[[“You tell me who you are in all of this first.”|Serena_Main][$Knowledge += 1]]
+[[Stare at her silently|Serena_Curious]]
+[[Grip your weapon but say nothing|Serena_Main][$Violence += 1]]
+&lt;&lt;/if&gt;&gt;
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="Serena_Know" tags="" position="2600,4200" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+Something in you just can&#39;t let her go, and moreover, makes you loose the grip just a little, to not hurt her. You see her looking at you. Something in that gaze catches you off guard. Real exhaustion. Like a performer, carrying a title they were never meant for to begin with.
+
+&quot;There’s nothing fair about this,&quot; she says quietly. &quot;Not for you. Not for me. Not for what they...” Her eyes look down for a second and then back at you. “The Gods set things in motion long before either of us had the chance to choose.”
+
+&lt;&lt;if $Madness &gt;= 2 and $Madness &lt; 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Oh, those Gods!&quot;&lt;/i&gt;&lt;/p&gt;Eris says, pleased. &lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;How fun, being the victim, labeling a leash.&quot;&lt;/i&gt;&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness &gt;= 3&gt;&gt;From the edge of your vision, Eris leans against the wall, watching the two of you with open amusement. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Careful, babe,”&lt;/p&gt; she hums, tilting her head. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Getting a little too close there...&quot;&lt;/p&gt;&lt;&lt;/if&gt;&gt;Serena shakes her head, as if waking from her own thoughts.
+
+Serena exhales slowly. “I am doing what I can,” she whispers, “to make sure he doesn’t make them suffer more than they already must... but they just… follow. And when they can’t, he…”
+
+She cuts herself off and for the first time she looks away, not able to look at you anymore.
+
+&lt;&lt;if $Knowledge &gt;= 5&gt;&gt;[[&quot;So the Queen answers to something after all.&quot;|Serena_Final][$Knowledge += 1]]&lt;&lt;/if&gt;&gt;
+[[&quot;And that makes you a victim then?&quot;|Serena_Final]]
+[[&quot;You&#39;re still choosing this.&quot;|Serena_Final]]
+[[“Hey... My name is Facey”|Serena_Know2][$Knowledge += 1]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="Serena_Vio" tags="" position="3200,3725" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+You don’t let go, and more than that, your grip around her wrist tightens as you place your other hand on your blades.
+
+She studies you again, looking at you from top to bottom, but still not pulling away.
+
+&quot;…So this is who you are,&quot; she murmurs. Her jaw tightens, and she then scoffs. &quot;Very well. Do you really think it&#39;s supposed to be &#39;fair&#39;? For you? For me?” Her eyes flicker. “The Gods set things in motion, and we don&#39;t get to choose.”
+
+&lt;&lt;if $Madness &gt;= 2 and $Madness &lt; 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Oh, those Gods!&quot;&lt;/i&gt;&lt;/p&gt;Eris says, pleased. &lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;How fun, being the victim, labeling a leash.&quot;&lt;/i&gt;&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness &gt;= 3&gt;&gt;From the edge of your vision, Eris leans against the wall, watching the two of you with open amusement. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Careful, babe,”&lt;/p&gt; she hums, tilting her head. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;You’re squeezing too hard.&quot;&lt;/p&gt;&lt;&lt;/if&gt;&gt;Serena shakes her head, as if waking from her own thoughts.
+
+Serena exhales very sharply, looking very tired. &quot;I am doing what I can,&quot; she continues, more exalted now, &quot;to make sure he doesn&#39;t...&quot; You see her fingers twitching.
+
+“They’re not… meant to survive this...” she adds, looking back at you, composing herself.
+
+&lt;&lt;if $Knowledge &gt;= 5&gt;&gt;[[&quot;So the Queen is a puppet?&quot;|Serena_Final][$Knowledge += 1]]&lt;&lt;/if&gt;&gt;
+[[&quot;Are you the Queen or not?&quot;|Serena_Final]]
+[[&quot;Keep talking. You&#39;re not fucking done yet.&quot;|Serena_Vio2][$Violence += 1]]
+[[&quot;Who...?&quot;|Serena_Final][$Violence -= 1]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="73" name="Serena_Curious" tags="" position="3300,4125" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+Serena leans in, and you get hit by the scent of jasmine. The distance between you tightens even more. Her eyes don’t leave your mask. &lt;i&gt;&quot;Why is she...&quot;&lt;/i&gt;
+
+“…What are you hiding under that mask?” she whispers, and her voice is like silk against your skin.&lt;&lt;if $Madness == 2&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Yes...&quot;&lt;/i&gt;&lt;/p&gt;Eris hums, amused. &lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;“What are you hidding, babe?&quot;&lt;/i&gt;&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness == 3&gt;&gt;Eris steps closer, circling Serena, her grin widening. &lt;p style=&quot;color: #a674e8;&quot;&gt;“Don’t pull away now… You want to see what happens, don&#39;t you?””&lt;/p&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[Lean In|PrototypeEnd][$PrototypeEnding = &quot;WoohooEnd&quot;]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+
+For a moment, she just watches you. Her composure slips for just a moment. You see the slight tension of her jaw, the way her breathing is not quite steady and calm as before. She&#39;s close enough that you could reach out and touch the curve of her collarbone.
+
+You don&#39;t. But the fact that you&#39;re thinking about it means you&#39;re losing ground.  &lt;i&gt;&quot;Wake the fuck up!&quot;&lt;/i&gt;
+
+&quot;Why are you here, really?&quot; she whispers again, breaking the silence. You force yourself to breathe, coming back to your senses, tightening the grip on her wrist. She winces softly.
+
+&lt;&lt;if $Knowledge &gt;= 5&gt;&gt;[[“Careful, my Queen… you’re starting to forget yourself.”|Serena_Know][$Knowledge += 1]&lt;&lt;/if&gt;&gt;
+[[&quot;I&#39;m not here to answer your questions&quot;|Serena_Break]]
+[[“Nothing you need to worry about”|Serena_Break]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="74" name="Serena_Break" tags="" position="2875,4050" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+You continue to hold her wrist and don’t step back. Serena watches you for a moment longer. There’s something in her expression that wasn’t there before. Defeated, maybe?
+
+&quot;This was never meant to be... fair either way.&quot; Her gaze drifts, just slightly, then returns to where your eyes should be through the mask. &quot;The Gods set things in motion long before either of us had the chance to choose.”&lt;&lt;if $Madness &gt;= 2 and $Madness &lt; 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;Greater than themselves?&lt;/i&gt;&lt;/p&gt;Eris cackles.&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Listen to her. Trying to pass fear as faith again... They always do!&quot;&lt;/i&gt;&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness &gt;= 3&gt;&gt;Eris shifts her weight against the wall, watching Serena more closely now, her smile widening. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;She’s getting closer, kitten… do ya like that?&quot;&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+
+Serena exhales again. Slower and quieter. &quot;I am doing what I can,&quot; she whispers, &quot;to make sure he doesn&#39;t make them suffer more than they already must.&quot;
+
+A pause. She doesn&#39;t look away.
+
+&lt;&lt;if $Knowledge &gt;= 5&gt;&gt;[[“Someone is puppeteering the Queen, then?”|Serena_Final]
+[[&quot;Who... &#39;must&#39; suffer...&quot;|Serena_Final]]
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="Serena_Final" tags="" position="2875,4250" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+Serena doesn’t answer right away. Instead, she studies you, now even closer... and you are not willing to break that distance.
+
+Her eyes trace the shape of your mask. “You carry a certain curiosity” she says, almost to herself.
+
+You take a second to look at her more closely now, studying her in turn. She stands in front of you, smaller in stature, with an ease to her posture. Her dress flows with small folds, and her hair cascades down her back, with a few wavy locks framing her face.
+
+The thought comes uninvited… and impossible to ignore. &lt;i&gt;&quot;She&#39;s... beautiful...&quot;&lt;/i&gt;
+
+You lose your focus for a second, until you see by the corner of your eye how her other hand lifts, slowly. Is she reaching for a weapon? No.
+
+For your mask.
+&lt;&lt;if $Madness &gt;= 2 and $Madness &lt;= 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;“Oh?”&lt;/p&gt;Eris hums, soft and curious now. &lt;p style=&quot;color: #a674e8;&quot;&gt;“Now this is interesting…”&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness &gt;= 3&gt;&gt;Eris walks towards you, watching, incredibly delighted. &lt;p style=&quot;color: #a674e8;&quot;&gt;“Oh, little kitten...”&lt;/p&gt; she murmurs directly in your ear. &lt;p style=&quot;color: #a674e8;&quot;&gt;“You like what you see...?”&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+Serena&#39;s fingers are now hovering just by your mask, close enough. She then stops. “…Who are you?” she asks again, but this time softer.
+
+A sharp knock at the door wakes you up from your thoughts. Serena tenses up and immediately steps back.
+
+“Your Majesty?”
+
+[[...|Damon_Entry]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="Damon_Entry" tags="" position="2875,4475" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+Serena doesn&#39;t move a muscle. You react quicker than she does, your body shifting back, pressing flat against the wall behind the door just as it begins to open.
+
+From where you stand, you scan the room again. To your left, a tall window stands slightly open, thin curtains dancing with the night air. Yes, an exit.
+
+Serena exhales softly, coming back to her senses and walking forward towards the door that opens now fully.
+
+&quot;My Queen,&quot; a calm voice says. Familiar, almost...
+
+&quot;I was not expecting a visit this evening, my Lord,&quot; she replies. Her voice falters, if only for a moment, before she steadies it again. “I trust there is a reason.”
+
+&quot;Certainly,&quot; he says. &quot;There have been reports of unacounted movement in the castle.”
+
+You get tense, pressing yourself harder against the wall. Serena shifts her gaze towards you for a second and then back at the voice. “I have seen nothing of concern,” she answers quickly.
+
+... but the voice doesn&#39;t respond.
+
+[[Stay and listen|Damon_Talk][$Knowledge += 1]]
+[[&quot;I should leave now&quot;|PrototypeEnd][$PrototypeEnding = &quot;GroundsEnd&quot;]]
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="Damon_Talk" tags="" position="3500,4400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&quot;My Lord?&quot; Serena breaks the silence.
+
+&quot;…You have not, you say?&quot; The voice finally responds.
+
+You hear the door creak open further, tightening what little space you have to move. You can see how Serena loses her composed posture and takes a slight step back.
+
+&quot;Serena, my dear… you would not be lying to me, correct?&quot; he says, now more stern and demanding. &quot;Now, you don&#39;t want me to bring your little brother, do you?&quot;
+
+She swallows, looks at you again and then back at the voice. &quot;…There has been no disturbance that I have witnessed, my Lord.&quot;
+
+Silence again. Serena stands her ground, looking up at the voice. He scoffs, then continues back to his calm demeanor. “The Emerald Order has been active,” he says. “More than usual. But they will soon regret it.&quot;
+
+Your chest tightens.
+
+“I would advise caution, my Queen,&quot; he continues. You hear him taking a step into the room. &quot;They are mobilizing… and I would rather not believe you would betray your family...&quot;
+
+Serena says nothing. He takes another step into the room...
+
+&lt;&lt;if $Madness &gt;= 3&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[Keep listening|PrototypeEnd][$PrototypeEnding = &quot;CaughEnd&quot;]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+[[Leave now|PrototypeEnd][$PrototypeEnding = &quot;GroundsEnd&quot;]]
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="Serena_Vio2" tags="" position="3350,3675" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+Your grip tightens even more now and Serena yelps louder now. She inhales sharply, completely cracking.
+
+“Enough!,” she yells. “You think you&#39;re strong and mighty?” she snaps, her voice rising. “You think hurting me changes anything?”
+
+For the first time, she tries to pull free and fails. Tries again, pulling harder to no avail.
+
+“Guards! INTRUDER!”
+
+&lt;&lt;if $Madness &gt;= 2 and $Madness &lt; 3&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Uh, gotta go, dummy&quot;&lt;/i&gt;&lt;/p&gt;Eris laughs under her breath. &lt;p style=&quot;color: #a674e8;&quot;&gt;&lt;i&gt;&quot;Shouldn&#39;t play that way with your toys&quot;&lt;/i&gt;&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness &gt;= 3&gt;&gt;
+Eris grins wide, delighted, stepping closer behind Serena.&lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Oh, you pushed her too far...Run.&quot;&lt;/p&gt; &lt;&lt;/if&gt;&gt;
+
+You look back as you hear footsteps closing into Serena&#39;s chambers. You turn back and look at her again. Serena hasn&#39;t look away from you.
+
+“You should have left...” she says. “Now you don’t get to.”
+
+&lt;&lt;if $Violence &gt;= 4&gt;&gt;[[Push her aside and force your way out|PrototypeEnd][$PrototypeEnding = &quot;VioEnd&quot;]]&lt;&lt;/if&gt;&gt;
+[[&quot;Move!&quot;|PrototypeEnd][$PrototypeEnding = &quot;VioEnd&quot;]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="79" name="Serena_Know2" tags="" position="2675,4400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;&lt;set $Madness to 3&gt;&gt;
+Serena doesn’t answer right away. Instead, she studies you for a second, leaning even closer.
+
+“…Facey,” she repeats softly. “It suits you.” She takes another step forward, making the distance between you completely disappear. The faint scent of jasmine wraps tighter around you. Her eyes don’t leave your mask.
+
+You take a second to look at her more closely now, studying her in turn. She stands in front of you, smaller in stature, with an ease to her posture. Her dress flows with small folds, and her hair cascades down her back, with a few wavy locks framing her face. The thought comes uninvited… and impossible to ignore. &lt;i&gt;&quot;She&#39;s... beautiful...&quot;&lt;/i&gt;
+
+She starts lifting her hand towards you until she reaches the edge of your mask.&lt;&lt;if $Madness is 2&gt;&gt;&lt;p style=&quot;color: #a674e8;&quot;&gt;“Oh?”&lt;/p&gt;Eris hums, soft and curious now. &lt;p style=&quot;color: #a674e8;&quot;&gt;“Now this is interesting…”&lt;/p&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness is 3&gt;&gt;Eris walks towards you, watching, incredibly delighted. &lt;p style=&quot;color: #a674e8;&quot;&gt;“Oh, little kitten...”&lt;/p&gt; she murmurs directly in your ear. &lt;p style=&quot;color: #a674e8;&quot;&gt;“You like what you see...?”&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+You react instantly. Your hand quickly reacts, grabbing her other wrist before she can fiddle with your mask any longer.
+
+Her composure slips for just a moment. You see the slight tension of her jaw, the way her breathing is not quite as steady and calm as before. She stands on the tip of her toes, closing the distance even more, whispering in your ear.
+
+“You shouldn’t be here... not with him watching...”
+
+A sharp knock at the door wakes you up from your thoughts. Serena tenses up and immediately steps back.
+
+“Your Majesty?”
+
+[[...|Damon_Entry]]
+
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="Alch_Go" tags="" position="3375,3300" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+
+The door. You need... Out. Now.
+
+You take a few steps behind, fumbling your hand, trying to find the handle. Nothing. &lt;i&gt;What the...&lt;/i&gt; You turn around and...
+
+You’re outside.
+
+You look around you and you see darkness and green. Some stars in the night sky illimnuates the forest. You try to look for Serena. For the castle. Nothing.
+
+&lt;i&gt;&quot;I need... I need to get to town.&quot;&lt;/i&gt;
+
+&lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;M̴ã̷ŷ̶ɓ̷ę̴… ĥĤħęĒē’ł… ƒƒĩẋ̷̛̓́̾̾̑͌́̒̓̕͝… ŷōŭ…&quot;&lt;/p&gt; Sje hugs you from behind your back, but you don&#39;t feel your weight changing. She whispering more into your ear. &lt;p style=&quot;color: #a674e8;&quot;&gt;&quot;Ø̷r̶… m̴ã̷ŷ̶ɓ̷ę̴… ŷōŭ’ŗę… āłŗęāđŷ… þęŗƒęćŧ̷̛̓́̾̾̑͌́̒̓̕͝…þęŗƒęćŧ&quot;&lt;/p&gt;
+
+The world flickers again.
+
+[[Ŧħę… ęŉđ̷̛̓́̾̾̑͌́̒̓̕͝… ??¿?¿… ¢øŋŧĩŋūę̷̛̓́̾̾̑͌́̒̓̕͝…|PrototypeEnd][$PrototypeEnding = &quot;MadnessEnd&quot;]]
 
 &lt;/p&gt;&lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
