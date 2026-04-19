@@ -278,48 +278,6 @@ html, body {
   box-shadow: 0.25rem 0.25rem var(--bg);
 }
 
-/* DRINK BUTTON */
-
-.button-drink a {
-  --bg: #0c0216;
-  --hover-bg: #c494f7;
-  --hover-text: #0c0216;
-
-  display: inline-block;
-  margin: 20px auto;
-  padding: 1em 2em;
-  width: 100%;
-
-  color: #fff;
-  background: var(--bg);
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.button-drink a:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
-}
-
-.button-drink a:active {
-  transform: translate(0);
-  box-shadow: none;
-}g);
-}
-
-
 /*LORE HOVER*/
 .hover {
   position: relative;
@@ -486,6 +444,18 @@ html, body {
 .shake {
   display: inline-block;
   animation: shake-text 0.2s infinite;
+}
+
+/* DRINK BUTTON */
+
+.button-drink a {
+  --hover-bg: #c494f7;
+  --hover-text: #0c0216;
+}
+
+.button-drink a:hover {
+  color: var(--hover-text);
+  background: var(--hover-bg);
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="StoryInit" tags="" position="2600,600" size="100,100">&lt;&lt;set $AlchemyMax = 3&gt;&gt;
 &lt;&lt;set $AlchemyCurrent = 3&gt;&gt;
 &lt;&lt;set $Madness = 0&gt;&gt;
@@ -576,12 +546,12 @@ The purple liquid inside shifts as you turn it in your hand, almost alive.
 You watch it for a moment.
 
 [[“There&#39;s no need for this now”|TownDream2]]
-&lt;span class=&quot;button-drink&quot;&gt;
-&lt;&lt;link &quot;Drink the vial&quot;&gt;&gt;
+&lt;span class=&quot;button-chapter&quot;&gt;
+&lt;&lt;link &quot;Perfect weapon. Always.&quot;&gt;&gt;
 &lt;&lt;audio &quot;drink&quot; play&gt;&gt;
 &lt;&lt;set $Madness += 1&gt;&gt;
 &lt;&lt;set $AlchemyCurrent -= 1&gt;&gt;
-&lt;&lt;goto &quot;TownDream2&quot;&gt;&gt;
+&lt;&lt;goto &quot;TownDream&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 &lt;/span&gt;
 
