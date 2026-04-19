@@ -154,9 +154,10 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   --hover-text: #000;
 
   display: inline-block;
-  margin: 20px auto;
-  padding: 1em 2em;
+  margin-top: 12px;
+  margin-bottom: 0;
   width: 100%;
+  display: block;
 
   color: #fff;
   background: var(--bg);
@@ -213,6 +214,7 @@ html, body {
   padding: 85px;
   width: 100%;
   max-width: 100%;
+  margin: 0 0 0.5rem 0;
   text-align: center;
   color: white;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
@@ -512,9 +514,15 @@ html, body {
 &lt;&lt;cacheaudio &quot;dam_control&quot; &quot;audio/damon_controlit.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;dam_carry&quot; &quot;audio/damon_carry.mp3&quot;&gt;&gt;
 
-&lt;&lt;cacheaudio &quot;drink&quot; &quot;audio/swallow.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Dreaming" tags="" position="2900,650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;&lt;cacheaudio &quot;drink&quot; &quot;audio/swallow.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;background&quot; &quot;audio/bg_music.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Dreaming" tags="" position="2900,650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
-&lt;p&gt;
+&lt;&lt;cacheaudio &quot;background&quot; &quot;audio/bg_music.mp3&quot;&gt;&gt;
+
+&lt;&lt;run setup.bgMusic = new Audio(&quot;audio/bg_music.mp3&quot;)&gt;&gt;
+&lt;&lt;run setup.bgMusic.loop = true&gt;&gt;
+&lt;&lt;run setup.bgMusic.volume = 0.4&gt;&gt;
+&lt;&lt;run setup.bgMusic.play()&gt;&gt;
 
 Darkness. Silence.
 
@@ -545,19 +553,17 @@ The purple liquid inside shifts as you turn it in your hand, almost alive.
 
 You watch it for a moment.
 
-[[“There&#39;s no need for this now”|TownDream2]]
-&lt;span class=&quot;button-chapter&quot;&gt;
-&lt;&lt;link &quot;Perfect weapon. Always.&quot;&gt;&gt;
+&lt;&lt;link &quot;“There&#39;s no need for this now”&quot;&gt;&gt;
+&lt;&lt;goto &quot;TownDream2&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;“Perfect weapon. Always.”&quot;&gt;&gt;
 &lt;&lt;audio &quot;drink&quot; play&gt;&gt;
 &lt;&lt;set $Madness += 1&gt;&gt;
 &lt;&lt;set $AlchemyCurrent -= 1&gt;&gt;
-&lt;&lt;goto &quot;TownDream&quot;&gt;&gt;
+&lt;&lt;goto &quot;TownDream2&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
-&lt;/span&gt;
 
-&lt;/p&gt;
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="TownDream2" tags="" position="2900,900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="TownDream2" tags="" position="2900,900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 &lt;&lt;if $Madness gte 1&gt;&gt;You bring the vial to your lips and drink. The taste is disgusting, metallic, and it burns all the way down. It doesn&#39;t matter.
@@ -817,8 +823,13 @@ He lifts the shimmering vial toward you.
 
 Has he always been this casual with it? You&#39;ve beaten him without it before, but he seems... changed since.
 
-[[Grab the vial|Lektryon_Alchemy][$Madness += 1]]
-[[“If you need it, that&#39;s your problem”|Lektryon_NoAlchemy]]
+&lt;&lt;link &quot;“If you need it, that&#39;s your problem”&quot;&gt;&gt;
+&lt;&lt;goto &quot;Lektryon_NoAlchemy&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Grab the vial&quot;&gt;&gt;
+&lt;&lt;set $Madness += 1&gt;&gt;
+&lt;&lt;goto &quot;Lektryon_Alchemy&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Lektryon_NoAlchemy" tags="" position="2225,1875" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
@@ -1089,7 +1100,7 @@ The choice is yours…
 
 [[&#39;&#39;I don&#39;t think I need this right now.&#39;&#39;|Castle_NoA]]
 [[&#39;&#39;Perfect weapon. Always.&#39;&#39;|Castle_A][$Madness += 1, $AlchemyCurrent -= 1]]
-&lt;&lt;if $Madness &gt;= 2&gt;&gt; &lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;I need this...&#39;&#39;|Castle_A][$Madness += 1, $AlchemyCurrent -= 1]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $Madness gte 2&gt;&gt; &lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;I need this...&#39;&#39;|Castle_A][$Madness += 1, $AlchemyCurrent -= 1]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Castle_A" tags="" position="2750,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
