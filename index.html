@@ -149,44 +149,58 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 /* CHAPTER BUTTON */
 
 .button-chapter a {
-  --bg: #0c0216;
-  --hover-bg: #437216;
-  --hover-text: #000;
-
-  display: inline-block;
-  margin-top: 12px;
-  margin-bottom: 0;
-  width: 100%;
   display: block;
+  width: 100%;
+  margin-top: 12px;
 
-  color: #fff;
-  background: var(--bg);
-  border: 1px solid var(--bg);
-  border-radius: 4px;
+  color: #e4d5f2;
+
+  background: linear-gradient(
+    135deg,
+    #0c0216 0%,
+    #1f3a36 100%   /* sea-green blend */
+  );
+
+  border: 1px solid rgba(200, 169, 106, 0.4); /* soft gold */
+  border-radius: 6px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
+  padding: 0.9em 2em;
+
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
+/* hover */
 .button-chapter a:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
+  color: #0c0216;
+
+  background: linear-gradient(
+    135deg,
+    #c8a96a 0%,   /* gold */
+    #437216 100%  /* your green */
+  );
+
+  border-color: #d4af37;
+
+  transform: translate(-0.2rem, -0.2rem);
+
+  box-shadow:
+    0.2rem 0.2rem #0c0216,
+    0 0 10px rgba(200, 169, 106, 0.4);
 }
 
+/* active */
 .button-chapter a:active {
   transform: translate(0);
   box-shadow: none;
 }
-
 
 /*BODY*/
 
@@ -200,10 +214,78 @@ html, body {
 }
 
 .passage {
-	min-height: 80vh
+	min-height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #10031c 0%,
+    #1a0a2a 40%,
+    #1f3a36 75%,
+    #3a2a1f 100%
+  );
+}
+
+/* OCEAN LIGHT */
+
+#passages {
+  position: relative;
+  overflow: hidden;
+}
+
+#passages::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(94, 159, 188, 0.10), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(94, 159, 188, 0.08), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.04), transparent 30%);
+
+  animation: water-drift 18s ease-in-out infinite;
+}
+
+#passages::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background: repeating-linear-gradient(
+    120deg,
+    rgba(94, 159, 188, 0.02),
+    rgba(94, 159, 188, 0.02) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+
+  animation: water-lines 12s linear infinite;
+}
+
+@keyframes water-drift {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-2%) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes water-lines {
+  from { transform: translateX(0); }
+  to   { transform: translateX(60px); }
+}
+
+.vn-box,
+.chapter-card,
+.passage {
+  position: relative;
+  z-index: 1;
 }
 
 /* MAIN TEXT BOX  */
@@ -211,9 +293,9 @@ html, body {
 .vn-box {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  padding: 85px;
+  padding: 70px;
   width: 100%;
-  max-width: 100%;
+  max-width: 950px;
   margin: 0 0 0.5rem 0;
   text-align: center;
   color: white;
@@ -302,6 +384,8 @@ html, body {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
+  border: 1px solid #c8a96a;
+  box-shadow: 0 0 10px rgba(200, 169, 106, 0.25);
 
   padding: 12px 12px;
   border-radius: 8px;
@@ -375,53 +459,72 @@ html, body {
 	box-shadow: 0 0 8px rgba(141, 119, 174, 0.6);
 }
 
-/*AUDIO*/
+/* AUDIO */
 
 .voice-icon {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
+
   width: 28px;
   height: 28px;
   margin-right: 8px;
-  font-size: 16px;
+
+  font-size: 14px;
+
   border-radius: 50%;
-  border: 1px solid rgba(196, 148, 247, 0.4);
-  background: rgba(196, 148, 247, 0.08);
-  color: #c494f7;
+
+  border: 1px solid rgba(200, 169, 106, 0.25); /* softer gold */
+  background: linear-gradient(
+    135deg,
+    rgba(12, 2, 22, 0.85),
+    rgba(31, 58, 54, 0.25)
+  );
+
+  color: rgba(200, 169, 106, 0.7); /* dimmed gold */
+
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
+/* hover */
 .voice-icon:hover {
-  background: rgba(196, 148, 247, 0.2);
-  border-color: #c494f7;
-  color: #ffffff;
-  transform: scale(1.1);
+  color: #e4d5f2;
+
+  background: linear-gradient(
+    135deg,
+    rgba(200, 169, 106, 0.7),
+    rgba(67, 114, 22, 0.7)
+  );
+
+  border-color: rgba(212, 175, 55, 0.6);
+
+  transform: scale(1.05);
+
+  box-shadow: 0 0 6px rgba(200, 169, 106, 0.25);
 }
 
+/* wrap fix */
 .vn-box .voice-wrap a {
   display: inline !important;
   width: auto !important;
   padding: 0 !important;
   margin: 0 0 0 8px !important;
+
   background: transparent !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+
   text-transform: none !important;
   letter-spacing: normal !important;
 }
 
-.vn-box .voice-wrap a:hover {
+.vn-box .voice-wrap a:hover,
+.vn-box .voice-wrap a:active {
   background: transparent !important;
   box-shadow: none !important;
   transform: none !important;
-}
-
-.vn-box .voice-wrap a:active {
-  transform: none !important;
-  box-shadow: none !important;
 }
 
 /*EXTRAS*/
@@ -458,7 +561,51 @@ html, body {
 .button-drink a:hover {
   color: var(--hover-text);
   background: var(--hover-bg);
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="StoryInit" tags="" position="2600,600" size="100,100">&lt;&lt;set $AlchemyMax = 3&gt;&gt;
+}
+
+
+/* LEVEL 1 — subtle unease */
+.madness-1 {
+    filter: contrast(105%) brightness(98%);
+}
+
+/* LEVEL 2 — tension rising */
+.madness-2 {
+    filter: contrast(110%) brightness(95%);
+}
+
+/* LEVEL 3 — unstable */
+.madness-3 {
+    filter: contrast(115%) brightness(92%) saturate(110%);
+}
+
+/* LEVEL 4 — ERIS OVERRIDE */
+.madness-4 {
+    filter: contrast(120%) brightness(88%) saturate(120%);
+    animation: madnessPulse 0.6s infinite alternate;
+}
+
+/* Pulse effect */
+@keyframes madnessPulse {
+    from { transform: translateX(0px); }
+    to   { transform: translateX(1px); }
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* MADNESS SYSTEM VISUAL CONTROLLER */
+
+$(document).on(':passagedisplay', function () {
+    
+    // Remove all previous madness classes
+    $('body').removeClass('madness-1 madness-2 madness-3 madness-4');
+
+    // Get current madness value
+    let madness = State.variables.Madness || 0;
+
+    // Apply class based on level
+    if (madness >= 1) $('body').addClass('madness-1');
+    if (madness >= 2) $('body').addClass('madness-2');
+    if (madness >= 3) $('body').addClass('madness-3');
+    if (madness >= 4) $('body').addClass('madness-4');
+});</script><tw-passagedata pid="1" name="StoryInit" tags="" position="2600,600" size="100,100">&lt;&lt;set $AlchemyMax = 3&gt;&gt;
 &lt;&lt;set $AlchemyCurrent = 3&gt;&gt;
 &lt;&lt;set $Madness = 0&gt;&gt;
 &lt;&lt;set $Knowledge = 0&gt;&gt;
@@ -515,10 +662,11 @@ html, body {
 &lt;&lt;cacheaudio &quot;dam_carry&quot; &quot;audio/damon_carry.mp3&quot;&gt;&gt;
 
 &lt;&lt;cacheaudio &quot;drink&quot; &quot;audio/swallow.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;background&quot; &quot;audio/bg_music.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Dreaming" tags="" position="2900,650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
-&lt;&lt;audio &quot;background&quot; play loop channel:&quot;bgm&quot;&gt;&gt;
-&lt;&lt;audio &quot;background&quot; volume 0.20&gt;&gt;
+&lt;&lt;run setup.bgm = new Audio(&quot;audio/bg_music.mp3&quot;)&gt;&gt;
+&lt;&lt;run setup.bgm.loop = true&gt;&gt;
+&lt;&lt;run setup.bgm.volume = 0.12&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Dreaming" tags="" position="2900,650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;&lt;run setup.bgm.play()&gt;&gt;
 
 Darkness. Silence.
 
@@ -537,9 +685,7 @@ You turn around and see a cobblestone path inviting you towards the port.
   &lt;h1 class=&quot;chapter-title&quot;&gt;Chapter 5&lt;/h1&gt;
   &lt;div class=&quot;chapter-subtitle&quot;&gt;The Erythros Castle&lt;/div&gt;
   &lt;div class=&quot;button-chapter&quot;&gt;[[Start Game|Dreaming]]&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="TownDream" tags="" position="2900,775" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
-
-&lt;p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="TownDream" tags="" position="2900,775" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 You walk down to the docks of the town. You know this place too well. Shipments of alchemy come to this port very often, and it&#39;s on you for them to go smoothly.
 
@@ -559,8 +705,7 @@ You watch it for a moment.
 &lt;&lt;goto &quot;TownDream2&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="TownDream2" tags="" position="2900,900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
-&lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="TownDream2" tags="" position="2900,900" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 &lt;&lt;if $Madness gte 1&gt;&gt;You bring the vial to your lips and drink. The taste is disgusting, metallic, and it burns all the way down. It doesn&#39;t matter.
 
@@ -575,8 +720,7 @@ You know what it does to you. Heightened senses and dexterity. You are the Emera
 
 [[Continue toward the port|TownDream3]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="TownDream3" tags="" position="2900,1025" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
-&lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="TownDream3" tags="" position="2900,1025" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 You finally arrive at the docks and lift your head. Amongst the fog, you see a figure on her knees you recognize immediately. Her long white hair, usually so carefully kept, hangs tangled. Her dress, always immaculate, is torn, stained.
 
