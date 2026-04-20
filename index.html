@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Nerethos" startnode="3" creator="Twine" creator-version="2.11.1" format="SugarCube" format-version="2.37.3" ifid="5E1D14A4-27EC-48E6-8DC8-5061C4173EAD" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+	<tw-storydata name="Nerethos" startnode="3" creator="Twine" creator-version="2.11.1" format="SugarCube" format-version="2.37.3" ifid="5E1D14A4-27EC-48E6-8DC8-5061C4173EAD" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 /* CHAPTER CARD */
 
 .ui-bar {
@@ -785,7 +785,7 @@ You are awake now.
 
 [[Get Up|Start]] 
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="PrisonStart" tags="" position="2600,1400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="PrisonStart" tags="" position="2625,1325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Your steps echo down the stairs as you make your way to the last cell. She has been here for a while, and yet there have not been signs of resistance.
@@ -797,7 +797,7 @@ Strawberry and &lt;i&gt;that creature.&lt;/i&gt;
 [[I did|Separated][$Violence += 1; $Madness += 1, $BerriesSeparated = true]]
 [[No, I didn&#39;t|NotSeparated]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="LektryonStart" tags="" position="2675,1750" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="LektryonStart" tags="" position="2675,1675" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You make your way to the Order&#39;s training grounds. You hear the rhythm of the clash of steel against steel echoing through the hallway before you reach the area.
@@ -889,7 +889,7 @@ You’ve stood here a hundred times before. What is your next step? &lt;&lt;/if&
 &lt;&lt;if !$VisitedBerry&gt;&gt;[[Visit the prisoner|PrisonStart]]&lt;&lt;/if&gt;&gt;
 [[No time to waste, let&#39;s get ready|Castle_Prep]]
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Separated" tags="" position="2450,1375" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Separated" tags="" position="2475,1300" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You get to the cell. Strawberry sits where she always does, curled inward.
@@ -907,7 +907,7 @@ Nothing. Her eyes seem to be looking at you, but they remain unfocused, as if yo
 [[Grab her and force a response|PrisonSeparated_GrabThreat]]
 [[Strike her to break the silence|PrisonSeparated_Strike][$Violence += 1]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="NotSeparated" tags="" position="2450,1225" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="NotSeparated" tags="" position="2475,1150" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You stop in front of the cell, and you see them. Strawberry is sitting close to &lt;div class=&quot;hover&quot;&gt;&lt;&lt;nobr&gt;&gt;Blueberry &lt;span class=&quot;hoverblock&quot;&gt; A blue creature, with the head and front legs of a stallion and the wings, tail, and hind legs of a rooster. &lt;/span&gt; &lt;&lt;/nobr&gt;&gt;&lt;/div&gt;, one hand buried in the creature’s wings. Blueberry lifts her head when you show up, watching you.
@@ -928,7 +928,7 @@ Strawberry keeps petting Blueberry and smiles at you, as if the question answers
 [[“This is pointless”|Main Hall][$Knowledge -= 1, $VisitedHall to true, $VisitedBerry to true]]
 [[Stay and watch them a little longer|Strawberry_Watch][$StrawberryTrust += 1]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="PrisonSeparated_GrabThreat" tags="" position="2325,1450" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="PrisonSeparated_GrabThreat" tags="" position="2350,1375" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You reach into the cell, pulling Strawberry toward you.
@@ -942,7 +942,7 @@ After a minute, you let her go, step away, and turn your back. You hear the fain
 [[“You were talking when we took you...”|BerryEnd]]
 [[“What a waste of time”|Main Hall][$VisitedHall to true, $VisitedBerry to true]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="PrisonSeparated_Strike" tags="" position="2400,1575" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="PrisonSeparated_Strike" tags="" position="2425,1500" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You reach into the cell, pulling Strawberry toward you.
@@ -957,7 +957,7 @@ When she lifts her head again, there&#39;s nothing. Your fingers curl into a fis
 
 [[Leave the prison wing|Main Hall][$VisitedHall to true, $VisitedBerry to true]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Lektryon_Pass2" tags="" position="2525,1700" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Lektryon_Pass2" tags="" position="2525,1675" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Lektryon tosses a training sword at your feet. You glance at it and then back at him, already settling into stance, steel sword in hand. Then he stops for a second to take an item off his belt.
@@ -1004,7 +1004,7 @@ You kick the training weapon aside and unsheathe your &lt;div class=&quot;hover&
 
 [[Strike again before he resets|Lektryon_Alchemy_PreStrike]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Lektryon_Observe" tags="" position="2175,2175" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Lektryon_Observe" tags="" position="2200,2125" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Not yet. Just a little more. Lektryon swings again, committing his weight to the strike. You step aside just enough for it to miss you, but close enough to feel the shift in the air from the swing.
@@ -1039,7 +1039,7 @@ You have already turned away from him, leaving the training grounds. You don&#39
 
 [[Return to the Main Hall|Main Hall][$VisitedHall to true, $VisitedLek to true]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Lektryon_Strike" tags="" position="2300,2025" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Lektryon_Strike" tags="" position="2325,2000" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Enough. You don’t wait for the next opening; you meet him head-on. Your first blade catches his mid-swing, and before he can recover, you’re already moving closer.
@@ -1053,7 +1053,7 @@ Lektryon freezes for a moment and exhales a loud gasp. His grip tightens around 
 [[“Still chasing after me, brother?”|Lektryon_FightEnd]]
 [[“You’re relying on it now. I can see it.”|Lektryon_FightEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Lektryon_Alchemy_Strike" tags="" position="2600,1975" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Lektryon_Alchemy_Strike" tags="" position="2625,1950" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 He tries to stand up immediately, but he&#39;s too slow. You’re already on him.
@@ -1070,7 +1070,7 @@ He hisses and groans through his teeth. You keep your blade buried deep into his
 [[“Say it. Say you are done, Centurion”|Lektryon_FightEnd]]
 [[“Do you want to stop, brother?”|Lektryon_FightEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Lektryon_Alchemy_Aggressive" tags="" position="2475,1975" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Lektryon_Alchemy_Aggressive" tags="" position="2475,1950" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 He tries to stand up, but you don’t let him. Without a thought or even a beat, your blade crashes into his guard, breaking through by sheer force. Then again. Then again.
@@ -1086,7 +1086,7 @@ He hisses and groans through his teeth. You keep your blade buried deep into his
 [[“Say it. Say you’re done, Centurion.”|Lektryon_FightEnd]]
 [[“Are you done, brother?”|Lektryon_FightEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="BerryEnd" tags="" position="2175,1700" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="BerryEnd" tags="" position="2200,1625" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 &lt;&lt;if $BerriesSeparated&gt;&gt;There is nothing left to say here. You stand there for a moment longer, waiting for her to say anything. She just curls back into the same position as before. This has been pointless.&lt;&lt;else&gt;&gt;
@@ -1099,7 +1099,7 @@ After a few minutes, you finally turn away from them and make your way out of th
 [[Return to Main Hall|Main Hall][$VisitedHall to true, $VisitedBerry to true]]
 &lt;&lt;if $Madness is 2&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[“I can have you killed, girl”|Main Hall][$VisitedHall to true, $VisitedBerry to true]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Strawberry_Press" tags="" position="2250,1225" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Strawberry_Press" tags="" position="2275,1150" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Is she serious? Is she just here because the beast is here? You try again. You need these answers.
@@ -1114,7 +1114,7 @@ Friend? A wild beast, and she calls it a friend? Strange. “You... would rather
 
 [[Lock eyes with Strawberry|Strawberry_Press2]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Strawberry_Press3" tags="" position="2125,1500" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Strawberry_Press3" tags="" position="2150,1425" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 You gesture toward Blueberry. “I want to know what you did. What you used to make that awful creature answer to you!”
@@ -1131,7 +1131,7 @@ Your shoulders go rigid, your jaw tightens, and you hold your breath for a secon
 
 [[Continue|BerryEnd]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Strawberry_Watch" tags="" position="2450,1050" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Strawberry_Watch" tags="" position="2475,975" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt; 
 
 The answer is not good enough, but you don&#39;t press harder. You cross your arms and lean your back against the wall behind you, still observing them. 
@@ -1143,7 +1143,7 @@ You sigh and see Blueberry’s eyes flick toward you for a second… then back t
 [[Keep watching their interaction|Strawberry_Talk]]
 [[No time to waste, let&#39;s go|Main Hall][$Knowledge -= 1, $VisitedHall to true, $VisitedBerry to true]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Strawberry_Talk" tags="" position="2075,1075" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Strawberry_Talk" tags="" position="2100,1000" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;At this point, Strawberry has gotten used to your visits, so she doesn’t react to your presence. She is just sitting with the animal, petting it and singing to it. And it just &lt;i&gt;leans&lt;/i&gt; into it.
 
 That is not right. Everything reacts to control or to fear. Or pain. This creature must have been conditioned somehow to react like this... right?
@@ -1156,7 +1156,7 @@ Strawberry finally looks up at you.
 [[“Why isn’t it attacking you?”|Strawberry_Talk2][$Knowledge += 1]]
 [[“This is an erratic beast. Why is it not trying to escape?”|Strawberry_Talk2][$Knowledge += 1]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Strawberry_Talk2" tags="" position="1850,1425" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="Strawberry_Talk2" tags="" position="1875,1350" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;Strawberry looks at you for a moment, like she’s trying to understand what you’re really asking. &lt;span style=&quot;color: #5E9FBC;&quot;&gt;“What do you mean? She wouldn&#39;t do that. She is my friend!”&lt;/span&gt; she says. &lt;span style=&quot;color: #5E9FBC;&quot;&gt;“We take care of each other.”&lt;/span&gt;
 
 What? You can&#39;t understand this. Valerian says the creature should be wild and unpredictable. He said it was a territorial beast, impossible to keep restrained. But Blueberry... it willingly leans toward Strawberry. Toward her hand and her voice and her presence. She is now petting Blueberry again, smiling with her.
@@ -1165,7 +1165,7 @@ You take a step and hold the bars with one hand. “That’s not how this works.
 
 [[Continue|Strawberry_Talk3]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Strawberry_Talk3" tags="" position="1850,1625" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="34" name="Strawberry_Talk3" tags="" position="1875,1550" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;Strawberry places her hands on Blueberry&#39;s neck and side and starts caressing her, calming her down. The creature neighs softly and lays her head down. “It&#39;s okay girl, it&#39;s all good,&quot; she says. &quot;She doesn’t like loud noises or things moving fast. It scares her.”
 
 You look at the creature again, still ready to defend. There is no more tension or stance... just calm.
@@ -1222,7 +1222,7 @@ His voice is stern and certain.
 
 [[Continue|Valerian_Cont]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Go" tags="" position="2900,2200" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Go" tags="" position="2900,2175" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 Valerian leaves, closing the door behind him. No additional command, just the certainty you’ll do it to perfection. The mission is clear: Enter, observe, return. Nothing more.
@@ -1242,7 +1242,7 @@ The choice is yours…
 &lt;&lt;goto &quot;Castle_A&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Castle_A" tags="" position="2750,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Castle_A" tags="" position="2750,2300" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 A few hours have passed, and finally, the castle rises from the mist. Stone towers stretch upward, catching the glow of the moon.
@@ -1266,7 +1266,7 @@ Ahead, the castle walls come into view. Closer now. You see a balcony to the wes
 &lt;&lt;/if&gt;&gt;
 
 &lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Castle_NoA" tags="" position="3050,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Castle_NoA" tags="" position="3050,2275" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 A few hours have passed, and finally, the castle rises from the mist. Stone towers stretch upward, catching the glow of the moon.
 
@@ -1324,7 +1324,7 @@ You don’t have time to slow down. &lt;&lt;if $SeenShrine is true and $Madness 
 &lt;&lt;if not $SeenShrine&gt;&gt; [[Check the right corridor|ShrineA]] &lt;&lt;/if&gt;&gt; &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $Observations gte 2&gt;&gt; [[Move deeper into the castle|CatacombsA]] &lt;&lt;/if&gt;&gt;
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Archives" tags="" position="2900,2500" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Archives" tags="" position="3000,2425" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 You take the left corridor and walk down for a little while until you finally reach a door that is slightly open at the end of the hall. You push it open and slip inside.
 
@@ -1412,7 +1412,7 @@ And... small figures. A dozen? Maybe more. Some lying still on the beds. Some re
 [[Nothing left to see here|CastleHall]]
 
 &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="CastleHall" tags="" position="2900,3100" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
-&lt;&lt;set $Madness to 2&gt;&gt;
+
 &lt;&lt;if $Madness is 2&gt;&gt; &lt;span style=&quot;color: #a674e8;&quot;&gt;“Oh, come on…”&lt;/span&gt; The voice slips in, amused. &lt;span style=&quot;color: #a674e8;&quot;&gt;“You saw it.”&lt;/span&gt; A soft laugh follows. &lt;span style=&quot;color: #a674e8;&quot;&gt;“You just don’t want to say it.”&lt;/span&gt; &lt;&lt;/if&gt;&gt;&lt;&lt;if $Madness gte 3&gt;&gt; &lt;span style=&quot;color: #a674e8;&quot;&gt;“You felt it.”&lt;/span&gt; She&#39;s just beside you now. &lt;span style=&quot;color: #a674e8;&quot;&gt;“When that thing looked at you...”&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 
 You press your jaw slightly but continue walking down the castle halls in silence. The image of that creature does not leave you—that stillness, those eyes fixed too long, too aware, not wild, not afraid, but knowing. Something lingers with you. A pressure settles on your chest, slow and deliberate, your fingers curling slightly at your side. The motion is small, almost imperceptible, but you catch it. You always catch it. A loss of control, however slight, does not go unnoticed. And yet, for a moment, it hadn’t felt like yours. You bring a hand briefly to your temples, pressing against the lingering pain, steadying yourself as you keep moving. You are almost out of here.
@@ -1869,7 +1869,7 @@ You get tense, pressing yourself harder against the wall. Serena shifts her gaze
 
 [[Stay and listen|Damon_Talk][$Knowledge += 1]]
 [[&quot;I should leave now&quot;|PrototypeEnd][$PrototypeEnding = &quot;GroundsEnd&quot;]]
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="Damon_Talk" tags="" position="3425,4400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="Damon_Talk" tags="" position="3400,4400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 &lt;span style=&quot;color: #f4a6b8;&quot;&gt;“My Lord?”&lt;/span&gt; Serena breaks the silence.
 
 &lt;span style=&quot;color: #E5200F;&quot;&gt;“…You have not, you say?”&lt;/span&gt; the voice finally responds.
@@ -1880,7 +1880,7 @@ You hear the door creak open further, tightening what little space you have to m
 
 She swallows, looks at you again and then back at the voice. &lt;span style=&quot;color: #f4a6b8;&quot;&gt;“…There has been no disturbance that I have witnessed, my Lord.”&lt;/span&gt;
 
-[[Keep Listening ||Damon_Talk2]]
+[[Keep Listening |Damon_Talk2]]
 [[Leave now|PrototypeEnd][$PrototypeEnding = &quot;GroundsEnd&quot;]]
 
 &lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="Serena_Vio2" tags="" position="3325,3700" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
@@ -1942,7 +1942,7 @@ The world flickers again.
 
 [[Ŧħę… ęŉđ̷̛̓́̾̾̑͌́̒̓̕͝… ??¿?¿… ¢øŋŧĩŋūę̷̛̓́̾̾̑͌́̒̓̕͝…|PrototypeEnd][$PrototypeEnding = &quot;MadnessEnd&quot;]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Archives_Look" tags="" position="2875,2650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Archives_Look" tags="" position="2900,2550" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 
 Next document. It speaks of the war overseas. &quot;...by keeping them afraid, they seem willing to hand over their sons and daughters for &#39;the cause&#39;.&quot; You read it once more.
 
@@ -2002,7 +2002,7 @@ A high-pitched voice answers. “…will it hurt again?” A pause.
 [[Keep Observing|Catacombs_Ichor2]]
 [[Nothing left to see here|CastleHall]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="85" name="Strawberry_Press2" tags="" position="2125,1350" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="85" name="Strawberry_Press2" tags="" position="2150,1275" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 &lt;&lt;if $Madness is 2&gt;&gt; &lt;span style=&quot;color: #a674e8;&quot;&gt;“Are you fucking kiddin&#39; me? What a way of victimizing herself!”&lt;/span&gt;
 Your fingers twitch at your side. That&#39;s it. She has to be making this up. She has to be waiting until you are all unprepared to destroy this place. That has to be it. And yet... Blueberry is calm and tender with her. It doesn&#39;t even pull away. That damned thing should be wild and unpredictable, and yet...
@@ -2041,7 +2041,7 @@ Serena says nothing. He takes another step into the room...
 &lt;&lt;if $Madness gte 3&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[Keep listening|PrototypeEnd][$PrototypeEnding = &quot;CaughEnd&quot;]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 [[Leave now|PrototypeEnd][$PrototypeEnding = &quot;GroundsEnd&quot;]]
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="88" name="Lektryon_Alchemy_PreStrike" tags="" position="2525,1825" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="88" name="Lektryon_Alchemy_PreStrike" tags="" position="2525,1800" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 You move quickly before he can recover. You turn around him, your second blade already coming down as you circle to his back. It&#39;s over.
 
 You smile and turn back to him, blades coming down hard. Lektryon barely has a chance to react, but you still don&#39;t give him space. Another strike, then another. He’s not keeping up.
