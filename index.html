@@ -517,12 +517,8 @@ html, body {
 &lt;&lt;cacheaudio &quot;drink&quot; &quot;audio/swallow.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;background&quot; &quot;audio/bg_music.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Dreaming" tags="" position="2900,650" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
-&lt;&lt;cacheaudio &quot;background&quot; &quot;audio/bg_music.mp3&quot;&gt;&gt;
-
-&lt;&lt;run setup.bgMusic = new Audio(&quot;audio/bg_music.mp3&quot;)&gt;&gt;
-&lt;&lt;run setup.bgMusic.loop = true&gt;&gt;
-&lt;&lt;run setup.bgMusic.volume = 0.4&gt;&gt;
-&lt;&lt;run setup.bgMusic.play()&gt;&gt;
+&lt;&lt;audio &quot;background&quot; play loop channel:&quot;bgm&quot;&gt;&gt;
+&lt;&lt;audio &quot;background&quot; volume 0.20&gt;&gt;
 
 Darkness. Silence.
 
@@ -726,7 +722,12 @@ You pause and look at yourself in the mirror. “Hypocrite,” you mutter to you
 You exhale sharply and compose yourself. Whatever it was, it doesn’t matter. You have to keep yourself awake and ready for today&#39;s mission. You get ready after a few minutes, and just before you go, you take a vial out of your pouch. &lt;i&gt;Today I need to be at my best... should I...?&lt;/i&gt;
 
 [[“I don&#39;t think I need this now”|Main Hall]]
-[[Drink the vial|Main Hall][$Madness += 1, $AlchemyCurrent -= 1]]
+&lt;&lt;link &quot;Drink it&quot;&gt;&gt;
+&lt;&lt;audio &quot;drink&quot; play&gt;&gt;
+&lt;&lt;set $Madness += 1&gt;&gt;
+&lt;&lt;set $AlchemyCurrent -= 1&gt;&gt;
+&lt;&lt;goto &quot;Main Hall&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 &lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Main Hall" tags="" position="2900,1625" size="100,100">&lt;div class=&quot;vn-box&quot;&gt; &lt;p&gt;
 &lt;&lt;if $VisitedHall is false&gt;&gt;
@@ -824,12 +825,11 @@ He lifts the shimmering vial toward you.
 Has he always been this casual with it? You&#39;ve beaten him without it before, but he seems... changed since.
 
 &lt;&lt;link &quot;“If you need it, that&#39;s your problem”&quot;&gt;&gt;
-&lt;&lt;goto &quot;Lektryon_NoAlchemy&quot;&gt;&gt;
-&lt;&lt;/link&gt;&gt;
+&lt;&lt;goto &quot;Lektryon_NoAlchemy&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;link &quot;Grab the vial&quot;&gt;&gt;
+&lt;&lt;audio &quot;drink&quot; play&gt;&gt;
 &lt;&lt;set $Madness += 1&gt;&gt;
-&lt;&lt;goto &quot;Lektryon_Alchemy&quot;&gt;&gt;
-&lt;&lt;/link&gt;&gt;
+&lt;&lt;goto &quot;Lektryon_Alchemy&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 &lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Lektryon_NoAlchemy" tags="" position="2225,1875" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
@@ -1099,8 +1099,13 @@ But this is not a fight. This is just recon and you must be precise, controlled 
 The choice is yours…
 
 [[&#39;&#39;I don&#39;t think I need this right now.&#39;&#39;|Castle_NoA]]
-[[&#39;&#39;Perfect weapon. Always.&#39;&#39;|Castle_A][$Madness += 1, $AlchemyCurrent -= 1]]
 &lt;&lt;if $Madness gte 2&gt;&gt; &lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;I need this...&#39;&#39;|Castle_A][$Madness += 1, $AlchemyCurrent -= 1]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;link &quot;“Perfect weapon. Always.”&quot;&gt;&gt;
+&lt;&lt;audio &quot;drink&quot; play&gt;&gt;
+&lt;&lt;set $Madness += 1&gt;&gt;
+&lt;&lt;set $AlchemyCurrent -= 1&gt;&gt;
+&lt;&lt;goto &quot;Castle_A&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 &lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="Castle_A" tags="" position="2750,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
@@ -1109,15 +1114,24 @@ A few hours have passed, and finally, the castle rises from the mist. Stone towe
 
 You crouch at the top of the outer gates’ tower. From here, you can see the gardens below. Guards.
 
-Your eyes move through them quickly. There&#39;s no time to understand their patterns. You have to go. There&#39;s no way they can catch you anyway. &lt;&lt;if $Madness is 2&gt;&gt; &lt;span style=&quot;color: #a674e8;&quot;&gt;“There she is! Look at you go!”&lt;/span&gt; A whisper slips in, always, always amused. &lt;span style=&quot;color: #a674e8;&quot;&gt;“That’s better.”&lt;/span&gt; You shake it off for now, but you know she&#39;ll be back. &lt;&lt;/if&gt;&gt; Your body drops into the gardens, and the leaves under your boots crackle. You move immediately as guards start approaching your previous location.
+Your eyes move through them quickly. There&#39;s no time to understand their patterns. You have to go. There&#39;s no way they can catch you anyway. &lt;&lt;if $Madness gte 2&gt;&gt;&lt;span style=&quot;color: #a674e8;&quot;&gt;“There she is! Look at you go!”&lt;/span&gt; A whisper slips in, always, always amused. &lt;span style=&quot;color: #a674e8;&quot;&gt;“That’s better.”&lt;/span&gt; You shake it off for now, but you know she&#39;ll be back.&lt;&lt;/if&gt;&gt;
+
+Your body drops into the gardens, and the leaves under your boots crackle. You move immediately as guards start approaching your previous location.
 
 Ahead, the castle walls come into view. Closer now. You see a balcony to the west and multiple windows to the east.
 
 [[“I’ll check the West Wing”|Castle_HubA]]
 [[“I should try the East Wing”|Castle_HubA]]
-&lt;&lt;if $Madness gte 2&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[“That wasn&#39;t enough... one more?”|Castle_HubA][$Madness += 1, $AlchemyCurrent -= 1]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $Madness gte 2&gt;&gt;&lt;&lt;link &quot;“That wasn&#39;t enough. Just one more.”&quot;&gt;&gt;
+&lt;&lt;audio &quot;drink&quot; play&gt;&gt;
+&lt;&lt;set $Madness += 1&gt;&gt;
+&lt;&lt;set $AlchemyCurrent -= 1&gt;&gt;
+&lt;&lt;goto &quot;Castle_A&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+&lt;&lt;/if&gt;&gt;
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Castle_NoA" tags="" position="3050,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="Castle_NoA" tags="" position="3050,2325" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 A few hours have passed, and finally, the castle rises from the mist. Stone towers stretch upward, catching the glow of the moon.
 
@@ -1479,26 +1493,27 @@ One of the guards exhales. The other places a hand on his shoulder. “This is p
 
 [[It&#39;s time to go|CastleHall]]
 
-&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="Valerian_Cont" tags="" position="2900,2075" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
+&lt;/p&gt; &lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="Valerian_Cont" tags="" position="2900,2050" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;
 &lt;p&gt;
 
 He continues.
 
-&lt;span class=&quot;voice-wrap&quot;&gt;&lt;&lt;link &quot;&lt;span class=&#39;voice-icon&#39;&gt;⏵&lt;/span&gt;&quot;&gt;&gt;&lt;&lt;audio &quot;:playing&quot; stop&gt;&gt;&lt;&lt;audio &quot;val_erythros&quot; play&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&quot;The Erythros family has been destroying our island and our people for far too long... always hidden in that castle; always within the shadows.&quot;
+&lt;span class=&quot;voice-wrap&quot;&gt;&lt;&lt;link &quot;&lt;span class=&#39;voice-icon&#39;&gt;⏵&lt;/span&gt;&quot;&gt;&gt;&lt;&lt;audio &quot;val_erythros&quot; play&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;span style=&quot;color: #199D7C;&quot;&gt;&quot;The Erythros family has been destroying our island and our people for far too long... always hidden in that castle; always within the shadows.&quot;&lt;/span&gt;
 
-He turns from you and moves toward the window. His silhouette sharply cuts the faint light spilling in, his cloak falling straight down his back. Valerian stands with his hands resting behind his back settling his sight on the distant castle.
+He turns from you and moves toward the window. His silhouette sharply cuts the faint light spilling in, his cloak falling straight down his back. Valerian stands with his hands resting behind his back, settling his sight on the distant castle.
 
-&lt;span class=&quot;voice-wrap&quot;&gt;&lt;&lt;link &quot;&lt;span class=&#39;voice-icon&#39;&gt;⏵&lt;/span&gt;&quot;&gt;&gt;&lt;&lt;audio &quot;:playing&quot; stop&gt;&gt;&lt;&lt;audio &quot;val_tonight&quot; play&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;“Tonight, you step into their domain…” he says, firmly, “and you bring me a way to destroy them.”
+&lt;span class=&quot;voice-wrap&quot;&gt;&lt;&lt;link &quot;&lt;span class=&#39;voice-icon&#39;&gt;⏵&lt;/span&gt;&quot;&gt;&gt;&lt;&lt;audio &quot;val_tonight&quot; play&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;span style=&quot;color: #199D7C;&quot;&gt;“Tonight, you step into their domain…”&lt;/span&gt; he says firmly, &lt;span style=&quot;color: #199D7C;&quot;&gt;“and you bring me a way to destroy them.”&lt;/span&gt;
 
 He looks back at you with a stern expression. With expectation.
 
-&lt;span class=&quot;voice-wrap&quot;&gt;&lt;&lt;link &quot;&lt;span class=&#39;voice-icon&#39;&gt;⏵&lt;/span&gt;&quot;&gt;&gt;&lt;&lt;audio &quot;:playing&quot; stop&gt;&gt;&lt;&lt;audio &quot;val_answers&quot; play&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;“Come back with answers, Facey. We need them.”
+&lt;span class=&quot;voice-wrap&quot;&gt;&lt;&lt;link &quot;&lt;span class=&#39;voice-icon&#39;&gt;⏵&lt;/span&gt;&quot;&gt;&gt;&lt;&lt;audio &quot;val_answers&quot; play&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;span style=&quot;color: #199D7C;&quot;&gt;“Come back with answers, Facey. We need them.”&lt;/span&gt;
 
-[[&#39;&#39;Understood, Archon&#39;&#39;|Go]]
-[[&#39;&#39;I won’t fail, Archon&#39;&#39;|Go]]
+[[“Understood, Archon”|Go]]
+[[“I won’t fail, Archon”|Go]]
 &lt;&lt;if $Madness gte 2&gt;&gt;&lt;span class=&quot;alchemy-link&quot;&gt;[[&#39;&#39;I don&#39;t need you to tell me&#39;&#39;|Go]]&lt;/span&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;/p&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Serena_Room" tags="" position="2900,3400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
+&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Serena_Room" tags="" position="2900,3400" size="100,100">&lt;div class=&quot;vn-box&quot;&gt;&lt;p&gt;
 
 The door to Queen Serena’s chambers opens, and you immediately feel the difference. The rest of the castle is stone and ancient... but this space breathes.
 
